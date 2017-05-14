@@ -1,5 +1,11 @@
 import time
 import urllib.request
+def getpath():
+	conf=open('today.config','r')
+	st=conf.read()
+	key,pt=st.split('=')
+	if key=='path':
+		return pt
 if __name__ == '__main__':
 	try:
 		flag=True
@@ -11,7 +17,7 @@ if __name__ == '__main__':
 		print('An error occured:',e)
 
 	if flag==True:
-		fout=open('today.txt','wb+')
+		fout=open(getpath(),'wb+')
 		try:
 			text=rem.read()
 			fout.write(text)
