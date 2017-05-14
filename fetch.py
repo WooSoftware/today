@@ -17,7 +17,7 @@ def logger(*dt):
 	ts=time.asctime()
 	print('[',ts,']',dt)
 if __name__ == '__main__':
-	usestd(True) #Remember to change this after debugging
+	usestd(True)
 	while True:
 		try:
 			flag=True
