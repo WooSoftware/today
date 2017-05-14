@@ -16,6 +16,7 @@ def usestd(b):
 def logger(*dt):
 	ts=time.asctime()
 	print('[',ts,']',dt)
+	sys.stdout.flush()
 if __name__ == '__main__':
 	usestd(True)
 	while True:
