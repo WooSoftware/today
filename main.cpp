@@ -1,5 +1,4 @@
 #include "mainwindow.h"
-#include <Windows.h>
 #include <QApplication>
 #include <QtGui>
 #include <QDesktopWidget>
