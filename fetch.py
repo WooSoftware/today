@@ -30,7 +30,7 @@ if __name__ == '__main__':
 				
 		if flag==True:
 			logger('TXT fetch success')
-			fout=open('D:\\today.txt,'wb+')
+			fout=open('D:\\today.txt','wb+')
 			try:
 				text=rem.read()
 				fout.write(text)
