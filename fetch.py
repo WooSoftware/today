@@ -17,7 +17,7 @@ def logger(*dt):
 	ts=time.asctime()
 	print('[',ts,']',dt)
 if __name__ == '__main__':
-	usestd(False)
+	usestd(True) #Remember to change this after debugging
 	while True:
 		try:
 			flag=True
@@ -30,12 +30,16 @@ if __name__ == '__main__':
 				
 		if flag==True:
 			logger('TXT fetch success')
-			fout=open('D:\\today.txt','wb+')
+			fout=open('D:\\today.txt','w+')
 			try:
 				text=rem.read()
-				fout.write(text)
+				text=text.decode('UTF-8')
+				text=text.split('\n')
+				del text[0],text[-1]
+				text=[line+'\n' for line in text]
+				fout.writelines(text)
 			except Exception as e:
 				logger('Error:',e)
 			fout.close()
-			logger('TXT update done')
+			logger('TXT update done. Now sleep.')
 		time.sleep(1800)
