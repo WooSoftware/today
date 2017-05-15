@@ -1,2 +1,7 @@
 today.txt
 log
+release/*.dll
+release/iconengines
+release/imageformats
+release/platforms
+release/translations
