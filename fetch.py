@@ -18,7 +18,7 @@ def logger(*dt):
 	print('[',ts,']',dt)
 	sys.stdout.flush()
 if __name__ == '__main__':
-	usestd(True)
+	usestd(False)
 	while True:
 		try:
 			flag=True
