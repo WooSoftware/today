@@ -60,6 +60,7 @@ MainWindow::MainWindow(QWidget *parent) :
         int sh = d->height();
         int tw = this->width();
         int th = this->height();
+        //ui->textEdit->append(itoa());
         this->move(sw - tw - 10, sh - th - 70-count * ui->textEdit->fontPointSize());
 
 }
