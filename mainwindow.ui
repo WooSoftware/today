@@ -6,15 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>927</width>
-    <height>850</height>
+    <width>910</width>
+    <height>482</height>
    </rect>
   </property>
   <property name="mouseTracking">
    <bool>true</bool>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>mainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>today_project_icon_beta_folded.ico</normaloff>today_project_icon_beta_folded.ico</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QWidget" name="layoutWidget">
