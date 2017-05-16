@@ -16,7 +16,9 @@ def usestd(b):
 def logger(*dt):
 	'''Logging Fuction'''
 	ts=time.asctime()
-	print('[',ts,']',dt)
+	print('[',ts,']',end='')
+	sys.stdout.writelines(dt)
+	print()
 	sys.stdout.flush()
 if __name__ == '__main__':
 	usestd(False)
@@ -32,7 +34,7 @@ if __name__ == '__main__':
 				
 		if flag==True:
 			logger('TXT fetch success')
-			fout=open('D:\\today.txt','w+')
+			fout=open(getpath(),'w+')
 			try:
 				text=rem.read()
 				text=text.decode('UTF-8')
