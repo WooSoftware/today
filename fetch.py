@@ -14,6 +14,7 @@ def usestd(b):
 		sys.stdout=lout
 
 def logger(*dt):
+	'''Logging Fuction'''
 	ts=time.asctime()
 	print('[',ts,']',dt)
 	sys.stdout.flush()
