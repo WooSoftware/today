@@ -8,7 +8,11 @@
 #include <QPalette>
 #include <QCursor>
 #include <QDateTime>
+#include <QString>
+#include <QDesktopWidget>
+#include <QDir>
 
+#include <string>
 bool m_right;
 QPoint mousepos;
 
@@ -26,19 +30,38 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->label_2->setText(d1.date().toString());
     //================================
     ui->textEdit->clear();
-    QFile file("D:\\today.txt");
-        if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
-            QMessageBox::information(0,"error",file.errorString());
 
-        QTextStream in(&file);
-        QString line = in.readLine();
-        while (!line.isNull()) {
-            process_line(line);
-            line = in.readLine();
-        }
+
+    QFile pathfile("./today.config");
+    if (!pathfile.open(QIODevice::ReadOnly | QIODevice::Text))
+        QMessageBox::information(0,"Config File Error",pathfile.errorString());
+        QTextStream pathin(&pathfile);
+        QString tline = pathin.readLine();
+        QString path = tline.mid(5); //path=
+
+
+     QFile file(path);
+            if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
+                QMessageBox::information(0,"Main File Error",file.errorString());
+    QTextStream in(&file);
+    QString line = in.readLine();
+    int count = 0;
+    while (!line.isNull()) {
+        process_line(line);
+        line = in.readLine();
+        count++;
+    }
+
     //================================
     this->setPalette(QPalette(QPalette::Base, Qt::transparent));
 //    QMessageBox::information(0,"","Now here");
+        QDesktopWidget * d = qApp->desktop();
+        int sw = d->width();
+        int sh = d->height();
+        int tw = this->width();
+        int th = this->height();
+        //ui->textEdit->append(itoa());
+        this->move(sw - tw - 10, sh - th - 70-count * ui->textEdit->fontPointSize());
 
 }
 

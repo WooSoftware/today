@@ -1,5 +1,4 @@
 #include "mainwindow.h"
-#include <Windows.h>
 #include <QApplication>
 #include <QtGui>
 #include <QDesktopWidget>
@@ -11,7 +10,7 @@ int main(int argc, char *argv[]){
 
    QApplication a(argc, argv);
    MainWindow w;
-   w.setWindowFlags(Qt::FramelessWindowHint | Qt::WindowStaysOnBottomHint);
+   w.setWindowFlags(Qt::FramelessWindowHint | Qt::WindowStaysOnBottomHint | Qt::Tool);
    w.setWindowOpacity(0);
 //   w.setWindowFlags(Qt::FramelessWindowHint|Qt::WindowStaysOnTopHint|Qt::Tool);
    w.setAttribute(Qt::WA_TranslucentBackground);
@@ -22,12 +21,12 @@ int main(int argc, char *argv[]){
    animation->setStartValue(w.windowOpacity());
    animation->setEndValue(0.6);
    animation->start();
-   QDesktopWidget * d = qApp->desktop();
-   int sw = d->width();
-   int sh = d->height();
-   int tw = w.width();
-   int th = w.height();
-   w.move(sw - tw - 10, sh - th - 70);
+//   QDesktopWidget * d = qApp->desktop();
+//   int sw = d->width();
+//   int sh = d->height();
+//   int tw = w.width();
+//   int th = w.height();
+//   w.move(sw - tw - 10, sh - th - 70);
 
    return a.exec();
 }

@@ -14,8 +14,12 @@ def usestd(b):
 		sys.stdout=lout
 
 def logger(*dt):
+	'''Logging Fuction'''
 	ts=time.asctime()
-	print('[',ts,']',dt)
+	print('[',ts,']',end='')
+	sys.stdout.writelines(dt)
+	print()
+	sys.stdout.flush()
 if __name__ == '__main__':
 	usestd(False)
 	while True:
@@ -30,12 +34,16 @@ if __name__ == '__main__':
 				
 		if flag==True:
 			logger('TXT fetch success')
-			fout=open(getpath(),'wb+')
+			fout=open(getpath(),'w+')
 			try:
 				text=rem.read()
-				fout.write(text)
+				text=text.decode('UTF-8')
+				text=text.split('\n')
+				del text[0],text[-1]
+				text=[line+'\n' for line in text]
+				fout.writelines(text)
 			except Exception as e:
 				logger('Error:',e)
 			fout.close()
-			logger('TXT update done')
+			logger('TXT update done. Now sleep.')
 		time.sleep(1800)
