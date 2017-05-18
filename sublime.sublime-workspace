@@ -1,0 +1,355 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"height",
+				"height"
+			],
+			[
+				"__",
+				"__name__"
+			],
+			[
+				"for",
+				"format"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "fetch.py",
+			"settings":
+			{
+				"buffer_size": 1211,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++ Starting Kit/C++ - Starting Kit.sublime-build",
+					""
+				],
+				[
+					"Packages/C++ Starting Kit/C++ - Starting Kit.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++ Starting Kit/C++ - Starting Kit.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/Python 3/Python3.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 219.0,
+		"last_filter": "git:add",
+		"selected_items":
+		[
+			[
+				"git:add",
+				"Git: Add Remote"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/G/IDE/Projects/today"
+	],
+	"file_history":
+	[
+		"/F/IDE/Projects/today/sublime.sublime-project",
+		"/D/today/fetch.py",
+		"/E/Documents/社团·NOIP/Project Today/fetch.py",
+		"/E/Documents/社团·NOIP/Project Today/today.txt",
+		"/E/Documents/社团·NOIP/Project Today/today.config",
+		"/E/Apps/Sublime Text/Data/Packages/User/SublimeGit.sublime-settings",
+		"/E/Apps/Sublime Text/Data/Packages/SublimeGit/SublimeGit.sublime-settings",
+		"/D/Documents/社团·NOIP/area/area.py",
+		"/D/Documents/社团·NOIP/Area.py",
+		"/D/Documents/社团·NOIP/DanceQueue.py",
+		"/D/Apps/Sublime Text/Data/Packages/User/SublimeREPL.sublime-settings",
+		"/D/Apps/Sublime Text/Data/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings",
+		"/D/Documents/社团·NOIP/RecursionTest.py",
+		"/D/Documents/社团·NOIP/3mod4.c",
+		"/D/Documents/社团·NOIP/IntegerSplit.py",
+		"/D/Documents/社团·NOIP/IntegerSplit.cpp",
+		"/F/Documents/社团·NOIP/Formattest.py",
+		"/H/Documents/社团·NOIP/StackQueue/StackQueue/StackQueue.cpp",
+		"/D/Documents/社团·NOIP/99乘法表/c++.cpp",
+		"/D/Apps/Sublime Text/Data/Packages/User/C++.sublime-build",
+		"/D/Documents/社团·NOIP/HorseRiding.py",
+		"/D/Documents/社团·NOIP/PandS/Cr(1-n).py",
+		"/D/Documents/社团·NOIP/8Queen/Queen.py",
+		"/D/Documents/社团·NOIP/Pyfile/copytxt.py",
+		"/D/Documents/社团·NOIP/Pr(1-n).py",
+		"/D/Apps/Sublime Text Build 3126/Data/Packages/WakaTime/WakaTime.sublime-settings",
+		"/D/Apps/Sublime Text Build 3126/Data/Packages/User/WakaTime.sublime-settings",
+		"/C/users/admini~1/appdata/local/temp/sublime-sftp-browse-1491472892/ws/root/qiniubk/backuptoqiniu.sh",
+		"/D/Apps/Sublime Text Build 3126/Data/Packages/User/sftp_servers/ws",
+		"/D/Apps/Sublime Text Build 3126/Data/Packages/User/SFTP.sublime-settings",
+		"/D/Apps/Sublime Text Build 3126/Data/Packages/SFTP/SFTP.sublime-settings",
+		"/C/Users/Administrator/Desktop/c++.cpp",
+		"/D/Documents/社团·NOIP/P1-n.cpp",
+		"/C/Users/Administrator/Desktop/py.py"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"9",
+			"4",
+			"8",
+			"])"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"n",
+			"m"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "fetch.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1211,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1211,
+								1211
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python 3/Python3.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 324.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 189.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "Packages/Python 3/Python3.sublime-build",
+	"project": "sublime.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
