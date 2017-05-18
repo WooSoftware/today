@@ -1,6 +1,19 @@
 import time
 import urllib.request
 import sys
+def decodefiletolist(enc,coder='UTF-8'):
+	enc=enc.decode(coder)
+	enc=enc.split('\n')
+	del enc[0],enc[-1]
+	enc=[line+'\n' for line in enc]
+	return enc
+
+def spam(strlist):
+	if '<head>' in strlist:
+		return None
+	else:
+		return strlist
+
 def getpath():
 	conf=open('today.config','r')
 	st=conf.read()
@@ -8,7 +21,7 @@ def getpath():
 	if key=='path':
 		return pt
 
-def usestd(b):
+def debug(b):
 	if b==False:
 		lout=open('log','w+')
 		sys.stdout=lout
@@ -20,9 +33,13 @@ def logger(*dt):
 	sys.stdout.writelines(dt)
 	print()
 	sys.stdout.flush()
+
+
+#Main Function starts here.
 if __name__ == '__main__':
-	usestd(False)
+	debug(False)
 	while True:
+		#Fetch Remote file from the server.
 		try:
 			flag=True
 			rem=urllib.request.urlopen('http://www.ipip5.com/today/api.php?type=txt')
@@ -36,11 +53,7 @@ if __name__ == '__main__':
 			logger('TXT fetch success')
 			fout=open(getpath(),'w+')
 			try:
-				text=rem.read()
-				text=text.decode('UTF-8')
-				text=text.split('\n')
-				del text[0],text[-1]
-				text=[line+'\n' for line in text]
+				text=spam(decodefiletolist(rem.read()))
 				fout.writelines(text)
 			except Exception as e:
 				logger('Error:',e)
